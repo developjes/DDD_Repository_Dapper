@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>02f7b355-33f9-44f2-96db-f62d4b2c6a56</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile></DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCore.HealthChecks.Network" Version="6.0.4" />
+    <PackageReference Include="AspNetCore.HealthChecks.Redis" Version="6.0.4" />
+    <PackageReference Include="AspNetCore.HealthChecks.SqlServer" Version="6.0.2" />
+    <PackageReference Include="AspNetCore.HealthChecks.System" Version="6.0.5" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI" Version="6.0.5" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="6.0.5" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="6.0.5" />
+    <PackageReference Include="AspNetCore.HealthChecks.UI.SqlServer.Storage" Version="6.0.5" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="FluentValidation" Version="11.5.1" />
+    <PackageReference Include="MicroElements.Swashbuckle.FluentValidation" Version="5.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Example.Ecommerce.Application.DTO\Example.Ecommerce.Application.DTO.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Application.Interface\Example.Ecommerce.Application.Interface.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Application.Main\Example.Ecommerce.Application.Main.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Domain.Core\Example.Ecommerce.Domain.Core.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Domain.Entity\Example.Ecommerce.Domain.Entity.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Domain.Interface\Example.Ecommerce.Domain.Interface.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Infrastructure.Data\Example.Ecommerce.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Infrastructure.Interface\Example.Ecommerce.Infrastructure.Interface.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Infrastructure.Repository\Example.Ecommerce.Infrastructure.Repository.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Transversal.Common\Example.Ecommerce.Transversal.Common.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Transversal.Logging\Example.Ecommerce.Transversal.Logging.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Transversal.Mapper\Example.Ecommerce.Transversal.Mapper.csproj" />
+  </ItemGroup>
+
+</Project>

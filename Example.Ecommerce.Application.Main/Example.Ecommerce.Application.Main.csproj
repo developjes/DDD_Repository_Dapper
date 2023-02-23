@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="7.0.3" />
+    <PackageReference Include="System.Text.Json" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Example.Ecommerce.Application.DTO\Example.Ecommerce.Application.DTO.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Application.Interface\Example.Ecommerce.Application.Interface.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Application.Validator\Example.Ecommerce.Application.Validator.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Domain.Entity\Example.Ecommerce.Domain.Entity.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Domain.Interface\Example.Ecommerce.Domain.Interface.csproj" />
+    <ProjectReference Include="..\Example.Ecommerce.Transversal.Common\Example.Ecommerce.Transversal.Common.csproj" />
+  </ItemGroup>
+
+</Project>
